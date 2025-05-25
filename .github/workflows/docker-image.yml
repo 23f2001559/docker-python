@@ -17,6 +17,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Debug DockerHub Username
+      run: echo "Username is: $DOCKERHUB_USERNAME"
+  
     - name: Log in to Docker Hub
       uses: docker/login-action@v3
       with:
